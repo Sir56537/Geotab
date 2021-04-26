@@ -1,2 +1,3 @@
 #!/bin/bash
-cp -rfv $HOME/Downloads/Advance* $HOME/Geotab/Raw-Data.xlsx
+rm -rf Advance*
+mv $HOME/Downloads/Advance* $HOME/Geotab/Raw-Data.xlsx
