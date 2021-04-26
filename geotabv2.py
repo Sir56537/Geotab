@@ -65,3 +65,7 @@ elif operator == "1":
 
 df = pd.read_excel(
     "Raw-Data.xlsx")
+
+df.to_csv("RAW.csv",
+          index=None,
+          header=True)
