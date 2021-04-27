@@ -69,5 +69,6 @@ file_loc = "Raw.xlsx"
 df = pdf = pd.read_excel(file_loc, sheet_name='Summary',
                          usecols="A,L", skiprows=10, NAN="~")
 
+df.fillna('', inplace=True)
 
 print(df)
