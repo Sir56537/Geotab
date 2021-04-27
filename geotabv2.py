@@ -1,3 +1,4 @@
+import numpy as np
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -64,9 +65,7 @@ elif operator == "1":
                    r'C:\Users\%username%\Documents\Geotab\move.ps1'])
 
 
-df = pd.read_excel(
-    "Raw.xlsx")
-
-df.to_csv("RAW.csv",
-          index=None,
-          header=True)
+file_loc = "Raw.xlsx"
+df = pd.read_excel(file_loc, index_col=None,
+                   na_values=['NA'], usecols="A,C:AA")
+print(df)
