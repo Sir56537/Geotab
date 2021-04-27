@@ -67,7 +67,7 @@ elif operator == "1":
 
 file_loc = "Raw.xlsx"
 df = pdf = pd.read_excel(file_loc, sheet_name='Summary',
-                         usecols="A,L")
+                         usecols="A,L", skiprows=10)
 
 
 print(df)
