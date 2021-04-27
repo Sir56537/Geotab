@@ -55,7 +55,7 @@ driver.find_element_by_xpath(
 time.sleep(2)
 driver.find_element_by_id(
     "template_ReportTemplateAdvancedTripsDetailId").click()
-time.sleep(10)
+time.sleep(20)
 if operator == "2":
     subprocess.call(['sh', './move.sh'])
 elif operator == "1":
