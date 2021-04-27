@@ -67,5 +67,5 @@ elif operator == "1":
 
 file_loc = "Raw.xlsx"
 df = pd.read_excel(file_loc, index_col=None,
-                   na_values=['NA'], usecols="A,C:AA")
+                   na_values=['NA'], usecols="A,R")
 print(df)
