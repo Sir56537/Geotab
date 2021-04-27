@@ -72,3 +72,4 @@ df = pdf = pd.read_excel(file_loc, sheet_name='Summary',
 df.fillna('', inplace=True)
 
 print(df)
+df.to_csv('formatted.csv')
